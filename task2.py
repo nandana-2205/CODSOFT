@@ -11,7 +11,6 @@ def div(a,b):
     except ZeroDivisionError:
         print("Division by zero is not allowed.")
 while True:
-    print("-----------------------------")
     print("SIMPLE ARITHMATIC OPERATIONS")
     print("-----------------------------")
     print("Select the operation you want to perform")
