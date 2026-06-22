@@ -11,18 +11,21 @@ def mul():
     b=int(input("Enter second number:"))
     print("The product is:",a*b)
 def div():
-    a=int(input("Enter first number:"))
-    b=int(input("Enter second number:"))
-    print("The quotient is:",a/b)
-    print("The remainder is:",a%b)
+    try:
+        a=int(input("Enter first number:"))
+        b=int(input("Enter second number:"))
+        print("The quotient is:",a/b)
+        print("The remainder is:",a%b)
+    except ZeroDivisionError:
+        print("Division by zero is not allowed.")
 while True:
     print("SIMPLE ARITHMATIC OPERATIONS")
     print("______________________________")
     print("Select the operation you want to perform")
-    print("1.Addition")
-    print("2.Subtraction")
-    print("3.Multiplication")
-    print("4.Division")
+    print("1.Addition - +")
+    print("2.Subtraction - -")
+    print("3.Multiplication - *")
+    print("4.Division - / and %")
     print("5.Exit")
     choice=int(input("Enter your choice:"))
     if choice==1:
@@ -37,3 +40,4 @@ while True:
         break
     else:
         print("Invalid choice")
+        
