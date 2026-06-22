@@ -20,18 +20,24 @@ while True:
     print("4.Division (/ and %) ")
     print("5.End")
     choice=input("Enter your operation choice: ")
-    a=int(input("Enter the first number: "))
-    b=int(input("Enter the second number: "))
     if choice=='1' or choice=='+':
+        a=int(input("Enter the first number: "))
+        b=int(input("Enter the second number: "))
         add(a,b)
     elif choice=='2' or choice=='-':
+        a=int(input("Enter the first number: "))
+        b=int(input("Enter the second number: "))
         sub(a,b)
     elif choice=='3' or choice=='*':
+        a=int(input("Enter the first number: "))
+        b=int(input("Enter the second number: "))
         mul(a,b)
     elif choice=='4' or choice=='/':
+        a=int(input("Enter the first number: "))
+        b=int(input("Enter the second number: "))
         div(a,b)
     elif choice=='5' or choice.upper()=='END':
         break
     else:
         print("Invalid operation. Please try again. ")
-        
+    
